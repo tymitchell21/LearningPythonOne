@@ -1,0 +1,137 @@
+<!doctype html>
+<!--
+ Filename: myBlog.html
+ Author: Tyler Ward
+ Create Date: 11 April 2016
+ Purpose: Creation of my Blog Website
+ Modification History: 
+ Original Build:  11 April 2016
+ 
+ Page tested in Google Chrome and Firefox
+ -Same for both browsers
+-->
+
+<head>
+	<meta charset="utf-8">
+	<title>My Blog</title>
+
+	<link rel="stylesheet" href="css/myBlog.css">
+
+<style>
+	#main-blog p {
+		font-size: 90%;
+	}
+</style>
+</head>
+
+<body>
+
+	<header id="top" style="min-width: 1000px;">
+		<nav id="navigation">
+    		<ul id="nav-bar">
+      			<li><a href="about.html">About</a></li>
+      			<li><a href="myBlog.html">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      			<li class="active"><a href="myBlog.html"><img src="images/logo.png" alt="Logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      			<li><a href="budget.html">Budget</a></li>
+      			<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="banner" style="min-width: 1000px;">
+		<a href="images/banner2.jpg"><img class="banner" src="images/banner2Web.jpg" alt="Travel Blog Banner"></a>
+	</section>
+	
+	<section id="main-table" style="min-width: 1250px;">
+		<div id="row">
+			<section id="main-blog">
+				<div class="back">
+				<header id="main-header">
+					<h1>Recent Blog Posts</h1>
+				</header>
+				<article>
+					<header class="article-headers">
+						<time datetime="2016-04-11">April 25, 2016</time>
+						<h2><a href="morningHike.html">Morning Hike</a></h2><br>
+						<a href="images/hike.jpg"><img src="images/hikeWeb.jpg" alt="Picture while hiking"></a>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today I went on a hike.  It never fails
+							to be a healing of the mind for each and every second that I spend outdoors
+							in the wild.<a class="read" href="morningHike.html"> (read more...)</a>
+							
+						</p>
+					</header>
+				</article>
+				<article>
+					<header class="article-headers">
+						<time datetime="2016-04-11">April 11, 2016</time>
+						<h2><a href="everybody.html">Where Is Everybody?</a></h2><br>
+						<a href="images/lecture.jpg"><img src="images/lectureWeb.jpg" alt="Picture of lecture hall"></a>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why is it that the more people who are in a classroom the more reserved and quiet students become?  
+							This lecture is dead, all of these people and it is dead quiet in here, enough to hear the clicks from 
+							kids typing away at their computers.  My guess is that they are not even taking notes, they are more 
+							likely surfing the web.  In fact, I can see that they are not taking notes.  As I look down the slope 
+							of the auditorium’s seats, I see a kid on Facebook, naturally, another is using Photoshop, another is 
+							surfing some sort of fantasy forum site, and, my personal favorite, the kid next to me is playing those
+							 Gameboy Pokémon games on his computer.  Actually, I might have to ask him how he does that.  Those games
+							  were the shit. <a class="read" href="everybody.html">(read more...)</a>
+						</p>
+					</header>
+				</article>
+				</div>
+			</section>
+			<aside id="sidebar">
+				<div id="side">
+					<article>
+						<header class="side-header">
+							<h1><a href="myBlog.html">Recent Blog Posts</a></h1><br><br>
+						</header>
+						<ul>
+							<li><h2><a href="everybody.html">Where Is Everybody?</a></h2></li>
+							<li><h2><a href="morningHike.html">Morning Hike</a></h2></li>
+						</ul>
+					</article>
+					<article>
+						<header class="side-header">
+							<h1>Photo Gallery</h1><br><br>
+						</header>
+						<div id="photo">
+							<div class="photoRow">
+								<a href="images/log.jpg"><img src="images/logWeb.jpg" alt="Picture of log"></a>
+								<a href="images/log2.jpg"><img src="images/log2Web.jpg" alt="Another of log"></a>
+							</div>
+							<div class="photoRow">
+								<a href="images/aldo.jpg"><img src="images/aldoWeb.jpg" alt="Picture of my dog Aldo"></a>
+								<a href="images/banner2.jpg"><img src="images/banner2Web2.jpg" alt="Picture of Turkey Run"></a>
+							</div>
+							<div class="photoRow">
+								<a href="images/hike.jpg"><img src="images/hikeWeb2.jpg" alt="Picture while hiking"></a>
+								<a href="images/work.jpg"><img src="images/workWeb2.jpg" alt="Picture while at work"></a>
+							</div>
+							<div class="photoRow">
+								<a href="images/about.jpg"><img src="images/aboutWeb2.jpg" alt="Picture of me hiking"></a>
+								<a href="images/tree.jpg"><img src="images/treeWeb.jpg" alt="Picture of a tree"></a>
+							</div>
+						</div>
+					</article>
+				
+				</div>
+			</aside>
+		</div>
+	</section>
+	
+	<footer style="min-width: 750px;">
+		<nav id="footer">
+    		<ul>
+      			<li><a href="about.html">About</a></li>
+      			<li><a href="myBlog.html">Blog</a></li>
+      			<li><a href="budget.html">Budget</a></li>
+      			<li><a href="contact.html">Contact</a></li>
+      			<li class="copyright">@ 2016 Quaestios  by Tyler Ward</li>
+			</ul>
+		</nav>
+	</footer>
+
+
+</body>

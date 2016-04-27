@@ -1,0 +1,324 @@
+@font-face {
+	font-family: myFont;
+	src: url(../fonts/TravelingTypewriter.ttf)
+}
+@font-face {
+	font-family: gunslinger;
+	src: url(../fonts/gunslinger.ttf)
+}
+@font-face {
+	font-family: comf;
+	src: url(../fonts/comfortaa.ttf)
+}
+@font-face {
+	font-family: fatface;
+	src: url(../fonts/aFatface.otf)
+}
+@font-face {
+	font-family: seasider;
+	src: url(../fonts/seasider.ttf)
+}
+@font-face {
+	font-family: spartan;
+	src: url(../fonts/spartan.otf)
+}
+
+body {										/* sets background color */
+	background-color: #E5E4D7;
+}
+
+header#top {								/*  sets header as fixed position, it's background-color, it's height */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	padding-top: 15px;
+	background-color: #313030;
+}
+	#navigation ul {						/*  styles ul in the navigation bar */
+		margin-top: -10px;
+		padding: 5px;
+		list-style-type: none;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+		#navigation ul li {					/*  makes ul li's inline in navigation bar */
+			display: inline
+		}
+			#navigation ul li a {			/*  styles links of navigation bar */
+				font-family: comf;
+				font-weight: lighter;
+				font-size: 200%;
+				padding-left: 15px;
+				padding-right: 15px;
+				color: #FFCF79;
+				text-decoration: none;
+			}
+				#navigation ul li a:hover {			/*  styles the links when hovers over */
+					color: #083e10;
+					background-color: #FFCF79;
+				}
+#banner {									/*  causes banner images to start at bottom of nav bar */
+	margin-top: 115px;
+}
+.banner {									/*  styles banner image  */
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: 30px;
+}
+#main-table {								/*  sets width of page content */
+	min-width: 1250px;
+}
+.back {										/*  creates and styles background of main content */
+	width: 800px;
+	margin: auto;
+	background-color: #FFCF79;
+	border-radius: 25px;
+	padding: 50px 0px;
+	margin-top: 75px;
+	margin-bottom: 100px;
+}
+blockquote {								/*  style's blockquotes */
+	margin: auto;
+	text-align: center;
+	margin-top: 50px;
+	width: 400px;
+}
+#main-blog h1 {								/*  style's the h1 of #main-blog section */
+    	font-family: spartan, seasider, fatface, comf, myFont, "Comic Sans MS", cursive, sans-serif;
+    	text-transform: uppercase;
+    	color: #556B2F;
+    	font-weight: 700;
+    	font-size: 300%;
+    	text-align: center;
+    	padding-bottom: 0px;
+    	border-bottom: 0.1px solid;
+    	display: inline
+    }
+    #main-blog header {						/*  style's header of main-blog section */
+    	margin-top: 30px;
+    }
+    #main-blog a {							/* style's links of main-blog secitno */
+    	color: black;
+    	text-decoration: none;
+    }
+    #main-blog .read {						/* changes color of the "read more link"s */
+    	color: #556B2F;
+    }
+    #main-blog article {					/* sets margin of articles in main-blog */
+    	margin: 50px 0px;
+    }
+    #main-blog h2 {							/* styles h2 of main-blog */
+    	font-family: myFont, "Comic Sans MS", cursive, sans-serif;
+    	font-weight: 300;
+    	font-size: 180%;
+    	margin: 15px 0 15px 0;
+    	text-align: center;
+    }
+    #main-blog author, time {				/* styles <author> and <time> elements */
+    	font-family: myFont, "Comic Sans MS", cursive, sans-serif;
+    	font-weight: 700;
+    	font-size: 80%;
+    	margin: 15px 0 15px 0;
+    	text-align: center;
+    }
+		#main-blog p {						/* styles p elements of main section */
+			text-transform: initial;
+    		font-size: 100%;
+    		line-height: 25px;
+    		font-weight: lighter;
+    		margin: 0 0 23px 0;
+    		padding: 50px 0px;
+    		width: 600px;
+    		margin: auto;
+    		font-family: 'Inder', sans-serif; line-height: 28px;
+    		text-align: left;
+		}
+		#main-blog .author {				/* styles the "Tyler" <p> at the bottom of blog posts */
+			font-family: myfont;
+			text-align: right;
+			padding-right: 200px;
+		}
+	#main-blog img {						/* styles pictures within main section */
+		border: 4px solid #FFCF79;
+		border-radius: 25px;
+		border-style: inset;
+	}
+.article-headers {							/* styles the headers of articles */
+	text-align: center;
+	font-family: myFont,'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 140%;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0px 23px 0px;
+}											/* creates a table from page content */
+#main-table {
+	display: table;
+	width: 100%;
+}
+	#row {									/* creates a row */
+		display: table-row;
+	}
+		#main-blog {						/* creates first cell with #main-blog and sets width */
+			display: table-cell;
+			width: 75%;
+			text-align: center;
+		}
+		#sidebar {							/* creates second cell with #sidebar section and sets width */
+			display: table-cell;
+			width: 25%;
+		}
+#side {										/* styles background of #sidebar section */
+	text-align: center;
+	width: 350px;
+	background-color: #7f8c8d;
+	padding: 50px 0px;
+	border-radius: 25px;
+	margin-bottom: 50px;
+}
+#side article {								/* sets margin of article in #side div */
+	margin-bottom: 50px;
+}
+#sidebar h1, h2 {							/* sets font of h1,h2 of #sidebar section */
+	font-family: spartan;
+}
+#sidebar h1 {								/* further style for h1 in #sidebar section */
+	font-size: 120%;
+	border-bottom: 1px solid;
+	display: inline;
+}
+#sidebar h2 {								/* further style for h2 in #sidebar section */
+	color: #556B2F;
+	text-indent: 10px;
+	text-align: left;
+	font-size: 80%;
+}
+#sidebar a {								/* style for links in #sidebar section */
+	text-decoration: none;
+	color: inherit;
+}
+#photo {									/* creates a table display for the "photo gallery" photos in the sidebar */
+	display: table;
+	margin: auto;
+
+}
+.photoRow {									/* creates row of those photos (2 photos per row) */
+	display: table-row;
+}
+.photoRow a {								/* each photo is a cell */
+	display: table-cell;
+}
+.photoRow img {								/* puts border around photo */
+	border: 1px solid #FFCF79;
+	margin: 2px;
+}
+.photoRow a:first-child {					/* sets width of first cell in each row */
+	width: 50%;
+}
+#footer {									/* styles footer */
+	width: 100%;
+	height: 50px;
+	padding-bottom: 15px;
+	background-color: rgba(1, 1, 1, 0.8);
+}
+	#footer ul {							/* styles the nav in footer */
+		margin-bottom: 0px;
+		text-align: right;
+		margin-right: 25px; 
+		padding: 5px;
+		list-style-type: none;
+		padding: 20px 0px;
+	}
+		#footer ul li {						/* styles the nav in footer */
+			display: inline;
+			color: grey;
+		}
+			#footer ul li a {				/* styles the links in the nav in footer */
+				font-size: 100%;
+				padding-left: 15px;
+				padding-right: 15px;
+				color: #FFCF79;
+				text-decoration: none;
+			}
+				#footer ul li a:hover {		/* styles the "hover" for the links in the nav in footer */
+					color: #083e10;
+					background-color: #313030;
+				}
+#main-blog form {							/* styles the form and creates a table from it */							
+	display: table;							
+	padding: 0px;
+	background-color: inherit;
+	width: 650px;
+	margin: auto;
+	text-align: center;
+	color: inherit;
+}
+	#main-blog form textarea {				/* styles the textarea input in form */				
+		width: 300px;
+		height: 150px;
+	}
+	#main-blog .tableRow {					/* makes each question a row of table */				
+		display: table-row;
+		border-color: #FFCF79;
+	}
+	#main-blog .tableRow p {				/* makes each p a cell of table and styles it */					
+		display: table-cell;
+		vertical-align: top;
+		margin: 0px;
+		padding: 15px 0px;
+	}
+		#main-blog .tableRow p:first-child {		/* makes first cell align right of each row */				
+			text-align: right;
+			width: 300px;
+		}
+		#main-blog .tableRow p:nth-child(2) {		/* makes second cell align left of each row */
+			text-align: left;
+			width: 300px;
+			padding-left: 10px;
+		}
+#main-blog table {							/* styles table on budget page */
+	border: 5px solid #EDD9C0;				
+	caption-side: top;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+	#main-blog table caption {				/* styles caption to tables */						
+		padding-bottom: 10px;
+		font-size: 20px;
+	}
+		#main-blog table td {				/* styles the td of the tables */			
+			border: thin dotted lightgray;
+			padding: 10px;
+			width: 140px;
+		}
+		#main-blog table th {				/* styles the th of the tables */				
+			border: thin solid lightgray;
+			padding: 10px;
+		}
+		.top {								/* changes background-color of top part of tables */
+			background-color: #7A6A53;
+		}
+		.category {							/* changes background-color of the side part of tables */	
+			background-color: #EDD9C0;
+		}
+		.savings {							/* changes background-color of bottom side part of table */	
+			background-color: #D9CEB2;
+		}
+		.amount {							/* background-color of cells under "current actual" */			
+			background-color: #D5DED9;
+		}
+		.amountTwo {						/* background-color of cells under "expected" */	
+			background-color: #948C75;
+		}
+		.total {							/* background-color for total cells at bottom */			
+			background-color: #99B2B7;
+		}
+	
+	
+				
+		
